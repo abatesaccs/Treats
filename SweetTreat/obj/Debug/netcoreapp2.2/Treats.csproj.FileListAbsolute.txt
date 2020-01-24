@@ -28,3 +28,11 @@
 /Users/Guest/Desktop/Treats.Solution/Treats/obj/Debug/netcoreapp2.2/Treats.dll
 /Users/Guest/Desktop/Treats.Solution/Treats/obj/Debug/netcoreapp2.2/Treats.pdb
 /Users/Guest/Desktop/Treats.Solution/Treats/obj/Debug/netcoreapp2.2/Treats.csproj.CopyComplete
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.csprojAssemblyReference.cache
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.RazorAssemblyInfo.cache
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.RazorAssemblyInfo.cs
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.AssemblyInfo.cs
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.dll
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.pdb

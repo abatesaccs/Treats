@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Treats.Solution.Models;
+using SweetTreat.Models;
 
-namespace Treats.Solution.Controllers
+namespace SweetTreat.Controllers
 {
     public class HomeController : Controller
     {

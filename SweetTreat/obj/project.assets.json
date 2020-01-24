@@ -12160,11 +12160,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/Treats.Solution/Treats/Treats.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/Treats.Solution/SweetTreat/Treats.csproj",
       "projectName": "Treats",
-      "projectPath": "/Users/Guest/Desktop/Treats.Solution/Treats/Treats.csproj",
+      "projectPath": "/Users/Guest/Desktop/Treats.Solution/SweetTreat/Treats.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/Treats.Solution/Treats/obj/",
+      "outputPath": "/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
