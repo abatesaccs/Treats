@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+@using SweetTreat.Models;
+@model List<SweetTreat.Models.Flavor>;
+
+<h2>Flavor Search</h2>
+<hr />
+
+@foreach (Flavor flavor in Model) {
+  <p>@flavor.FlavorName</p>
+}

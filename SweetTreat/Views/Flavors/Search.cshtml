@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+@model SweetTreat.Models.Flavor
+
+<h4>Search for a Flavor</h4>
+@using (Html.BeginForm("SearchDetails"))
+{
+    @Html.LabelFor(model => model.FlavorName)
+    @Html.TextBoxFor(model => model.FlavorName)
+    
+    <input type="submit" value="SearchDetails" />
+}
