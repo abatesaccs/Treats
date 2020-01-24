@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Treatization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 using System.Security.Claims;
@@ -12,7 +12,7 @@ using System.Security.Claims;
 
 namespace SweetTreat.Controllers
 {
-    [Treatize]
+    [Authorize]
     public class FlavorsController : Controller
     {
     private readonly SweetTreatContext _db;
