@@ -1,8 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using SweetTreat.Models;
-using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace SweetTreat.Controllers
 {
@@ -20,7 +25,7 @@ namespace SweetTreat.Controllers
       List<Treat> model = _db.Treats.ToList();
       return View(model);
     }
-
+    [Authorize]
     public ActionResult Create()
     {
       return View();

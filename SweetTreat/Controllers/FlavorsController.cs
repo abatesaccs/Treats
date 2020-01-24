@@ -31,6 +31,7 @@ namespace SweetTreat.Controllers
         var userFlavors = _db.Flavors.Where(entry => entry.User.Id == currentUser.Id);
         return View(userFlavors);
     }
+
     public ActionResult Create()
     {   
         ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "TreatName");

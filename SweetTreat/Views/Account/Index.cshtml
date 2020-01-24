@@ -6,7 +6,7 @@
 
 <h2>Authentication with Identity</h2>
 <hr />
-else
+@if(!User.Identity.IsAuthenticated)
 {
     <p>@Html.ActionLink("Register", "Register")</p>
     <p>@Html.ActionLink("Log in", "Login")</p>
