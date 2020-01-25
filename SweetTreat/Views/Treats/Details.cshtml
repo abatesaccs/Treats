@@ -4,9 +4,8 @@
 
 @model SweetTreat.Models.Treat;
 
-<h2>Treat Details</h2>
+<h4>Treat Deets</h4>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.TreatName): @Html.DisplayFor(model => model.TreatName)</h3>
 
 @if(@Model.Flavors.Count == 0)
 {
@@ -14,7 +13,7 @@
 }
 else
 {
-  <h4>Flavors this Treat contains:</h4>
+  <h4>Flavors of @Model.TreatName:</h4>
   <ul>
   @foreach(var join in Model.Flavors)
   {
@@ -26,3 +25,4 @@ else
 <p>@Html.ActionLink("Back to Treats", "Index")</p>
 <p>@Html.ActionLink("Edit Treat", "Edit", new { id = Model.TreatId })</p>
 <p>@Html.ActionLink("Delete Treat", "Delete", new { id = Model.TreatId })</p>
+<p>@Html.ActionLink("Add a Flavor", "AddFlavor", new { id = Model.TreatId })</p>
