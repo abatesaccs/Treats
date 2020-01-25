@@ -74,3 +74,4 @@
 /Users/Guest/Desktop/Treats.Solution/SweetTreat/bin/Debug/netcoreapp2.2/Treats.Views.pdb
 /Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.Views.pdb
 /Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Treats.csproj.CopyComplete
+/Users/Guest/Desktop/Treats.Solution/SweetTreat/obj/Debug/netcoreapp2.2/Razor/Views/Treats/AddFlavor.g.cshtml.cs

@@ -2,12 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using SweetTreat.Models;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
-using System.Security.Claims;
 
 namespace SweetTreat.Controllers
 {
@@ -38,7 +36,7 @@ namespace SweetTreat.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
-
+    
     public ActionResult Details(int id)
     {
       var thisTreat = _db.Treats
@@ -47,7 +45,7 @@ namespace SweetTreat.Controllers
           .FirstOrDefault(treat => treat.TreatId == id);
       return View(thisTreat);
     }
-
+    [Authorize]
     public ActionResult Edit(int id)
     {
       var thisTreat = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
@@ -61,7 +59,25 @@ namespace SweetTreat.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+    [Authorize]
+    public ActionResult AddFlavor(int id)
+    {
+      var thisTreat = _db.Treats.FirstOrDefault(treats => treats.TreatId == id);
+      ViewBag.FlavorId = new SelectList(_db.Flavors, "FlavorId", "FlavorName");
+      return View(thisTreat);
+    }
 
+    [HttpPost]
+    public ActionResult AddFlavor(Treat treat, int FlavorId)
+    {
+      if (FlavorId != 0)
+      {
+        _db.TreatFlavor.Add(new TreatFlavor() { FlavorId = FlavorId, TreatId = treat.TreatId });
+      }
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
+    [Authorize]
     public ActionResult Delete(int id)
     {
       var thisTreat = _db.Treats.FirstOrDefault(treat => treat.TreatId == id);
